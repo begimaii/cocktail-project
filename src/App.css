@@ -97,6 +97,7 @@
   border: 1px solid rgb(223, 221, 221);
   margin: 10px;
   cursor: pointer;
+  transition: transform 0.5s ease-in-out;
 }
 
 .cocktail-item img {
@@ -108,6 +109,8 @@
 
 .cocktail-item:hover {
   color: rgb(71, 149, 223);
+  transform: scale(0.95);
+  cursor: pointer;
 }
 
 .img-wrapper {
@@ -142,5 +145,51 @@
   position: relative;
 }
 .active {
-  color: red;
+  background-color: rgb(136, 129, 129);
+  color: aliceblue;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgb(226, 223, 223); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: rgb(65, 63, 63);
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content button {
+  margin-top: 15px;
+}
+.modal-content img {
+  width: 300px;
+}
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  font-size: 20px;
+}
+.ingredients ol {
+  text-align: start;
+  color: aliceblue;
+  font-size: 16px;
+}
+.instr {
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
 }
